@@ -40,15 +40,15 @@ def elevator_position(origin, t, path, speed):
 # rysujemy domek :)
 path = [
 	(9, 300),
-	(5, 75),
+	(5, 1000),
 	(3, 300),
-	(5, 75),
+	(5, 1000),
 	(2, 250),
-	(5, 75),
+	(5, 1000),
 	(4, 600),
-	(5, 75),
+	(5, 1000),
 	(8, 250),
-	(5, 75),
+	(5, 1000),
 ]
 
 origin = (0, 0) # skąd startuje elevator
@@ -58,4 +58,4 @@ speed = 300*sqrt(2) # szybkość elevatora (units/s)
 while 1:
     print(t, elevator_position(origin, t, path, speed))
     t = t + 0.1
-    sleep(0.5)
+    sleep(0.1)
